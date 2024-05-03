@@ -1,19 +1,33 @@
-
-
 .item-area {
     display: flex;
     gap: .5em;
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
     padding: 1em;
     border: .25em solid rgb(22, 66, 1);
     border-radius: 5px;
 }
 
-input, select {
+input,
+select {
+    font-size: 1em;
+width: 125px;
     border: .1em solid rgb(22, 66, 1);
     border-radius: 5px;
+    vertical-align: top;
+}
+
+input {
+    height: 24px;
+}
+
+select {
+    height: 26px;
 }
 
 footer {
