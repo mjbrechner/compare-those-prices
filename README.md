@@ -1,5 +1,7 @@
 Compare Those Prices! by M.J. Brechner
 
-Basic price comparison tool
+A basic price comparison tool.
+
+Viewable at https://mjbrechner.github.io/compare-those-prices/
 
 © 2024 M.J. Brechner
