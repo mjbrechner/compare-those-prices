@@ -24,7 +24,7 @@
             <div id="item-1" class="item">
                 <h2 id="item-1-header" class="item-header">Item #1</h2>
                 <label for="item-1-cost">Price: </label>
-                <input id="item-1-cost" type="number" min="0" value="0" size="10">
+                <input id="item-1-cost" onfocusout="cost1Cleaner()" type="number" min="0" value="0" size="10">
                 <label for="item-1-weight">Weight: </label>
                 <input id="item-1-weight" type="number" min="0" value="0" size="10">
                 <label for="item-1-weight-type">Weight Type: </label>
@@ -37,7 +37,7 @@
             <div id="item-2" class="item">
                 <h2 id="item-2-header" class="item-header">Item #2</h2>
                 <label for="item-2-cost">Price: </label>
-                <input id="item-2-cost" type="text" min="0" value="0" size="10">
+                <input id="item-2-cost" onfocusout="cost2Cleaner()" type="text" min="0" value="0" size="10">
                 <label for="item-2-weight">Weight: </label>
                 <input id="item-2-weight" type="number" min="0" value="0" size="10">
                 <label for="item-2-weight-type">Weight Type: </label>
@@ -50,7 +50,7 @@
             <div id="item-3" class="item">
                 <h2 id="item-3-header" class="item-header">Item #3</h2>
                 <label for="item-3-cost">Price: </label>
-                <input id="item-3-cost" type="number" min="0" value="0" size="10">
+                <input id="item-3-cost" onfocusout="cost3Cleaner()" type="number" min="0" value="0" size="10">
                 <label for="item-3-weight">Weight: </label>
                 <input id="item-3-weight" type="number" min="0" value="0" size="10">
                 <label for="item-3-weight-type">Weight Type: </label>
@@ -63,7 +63,7 @@
 
         <div class="results-area">
             <button id="submit" onclick="calculateComparison()">Submit</button>
-            <h1 id="results">Results are here.</h1>
+            <!-- <h1 id="results">Results are here.</h1> -->
         </div>
 
     </main>

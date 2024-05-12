@@ -17,9 +17,18 @@ let weightItem3 = 0;
 let weightTypeItem3 = "pounds";
 let pricePerItem3 = 0;
 
-function calculateComparison() {
-console.log("HI")
+// Round the price values to two decimal places.
+function cost1Cleaner() {
+    document.getElementById("item-1-cost").value = Number(document.getElementById("item-1-cost").value).toFixed(2);
+}
+function cost2Cleaner() {
+    document.getElementById("item-2-cost").value = Number(document.getElementById("item-2-cost").value).toFixed(2);
+}
+function cost3Cleaner() {
+    document.getElementById("item-3-cost").value = Number(document.getElementById("item-3-cost").value).toFixed(2);
+}
 
+function calculateComparison() {
 costItem1 = document.getElementById("item-1-cost").value;
 weightItem1 = document.getElementById("item-1-weight").value;
 weightTypeItem1 = document.getElementById("item-1-weight-type").value
@@ -42,7 +51,7 @@ if (pricePerItem1 => 0) {
 }
 
 if (pricePerItem2 => 0) {
-    document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ${weightTypeItem2} .`
+    document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ${weightTypeItem2}.`
 }
 
 if (pricePerItem3 => 0) {
