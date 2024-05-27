@@ -4,17 +4,17 @@
 
 let costItem1 = 0;
 let weightItem1 = 0;
-let weightTypeItem1 = "pounds";
+let weightTypeItem1 = "pound";
 let pricePerItem1 = 0;
 
 let costItem2 = 0;
 let weightItem2 = 0;
-let weightTypeItem2 = "pounds";
+let weightTypeItem2 = "pound";
 let pricePerItem2 = 0;
 
 let costItem3 = 0;
 let weightItem3 = 0;
-let weightTypeItem3 = "pounds";
+let weightTypeItem3 = "pound";
 let pricePerItem3 = 0;
 
 // Round the price values to two decimal places.

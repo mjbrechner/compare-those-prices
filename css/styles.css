@@ -24,17 +24,18 @@ h2 {
 .item {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 175px;
     width: 250px;
+    font-size: 10px;
     padding: 1em;
     border: .25em solid #44667c;
     border-radius: 5px;
 }
 
 .item-header {
-    height: 1.5em;
+    height: 50px;
     margin: 0;
-    padding: 5px 5px 25px;
+    /* padding: 5px 5px 5px; */
     text-align: center;
 }
 
@@ -102,8 +103,30 @@ a {
     height: 3em;
 }
 
+
+/*large phone query*/
+@media only screen and (min-width: 530px) {
+    .item {
+        font-size: 13px;
+        height: 250px;
+    }
+
+    .item-header {
+        height: 90px;
+    }
+}
+
 /*tablet query*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 690px) {
+
+    .item {
+        font-size: 15px;
+        height: 250px;
+    }
+
+    .item-header {
+        height: 110px;
+    }
 
     footer {
         flex-direction: row;
@@ -115,6 +138,25 @@ a {
         width: 3.5em;
         height: 3.5em;
     }
+}
+
+
+/* large tablet query*/
+@media only screen and (min-width: 900px) {
+
+    .item-area {
+        margin-bottom: 15px;
+    }
+
+    .item {
+        font-size: 17px;
+        height: 250px;
+    }
+
+    .item-header {
+        height: 125px;
+    }
+
 }
 
 /*desktop query*/
