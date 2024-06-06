@@ -44,17 +44,16 @@ weightItem3 = document.getElementById("item-3-weight").value;
 weightTypeItem3 = document.getElementById("item-3-weight-type").value
 pricePerItem3 = (costItem3/weightItem3).toFixed(2);
 
-// document.getElementById("results").innerText = `Item #1 Value: ${pricePerItem1}.   Item #2 Value: ${pricePerItem2}.   Item #3 Value: ${pricePerItem3}.`;
-
-if (pricePerItem1 => 0) {
+// Print out values only if price per item is => 0 without any NaN or Infinity values.
+if ((pricePerItem1 => 0) && !(isNaN(pricePerItem1) || (weightItem1 <= 0))) {
     document.getElementById("item-1-header").innerText = `Item #1's cost is $${pricePerItem1} per ${weightTypeItem1}.`
 }
 
-if (pricePerItem2 => 0) {
+if ((pricePerItem2 => 0) && !(isNaN(pricePerItem2) || (weightItem2 <= 0))) {
     document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ${weightTypeItem2}.`
 }
 
-if (pricePerItem3 => 0) {
+if ((pricePerItem3 => 0) && !(isNaN(pricePerItem3) || (weightItem3 <= 0))) {
     document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${weightTypeItem3}.`
 }
 }
