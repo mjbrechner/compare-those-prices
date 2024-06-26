@@ -24,18 +24,17 @@ h2 {
 .item {
     display: flex;
     flex-direction: column;
-    height: 175px;
+    height: 155px;
     width: 250px;
-    font-size: 10px;
-    padding: 1em;
+    font-size: 9px;
+    padding: .5em;
     border: .25em solid #44667c;
     border-radius: 5px;
 }
 
 .item-header {
-    height: 50px;
+    height: 40px;
     margin: 0;
-    /* padding: 5px 5px 5px; */
     text-align: center;
 }
 
@@ -49,7 +48,7 @@ select {
     background-color: #fdf9f1;
     font-size: 1em;
     font-weight: 500;
-    width: 125px;
+    width: 90px;
     border: .1em solid #44667c;
     border-radius: 5px;
     vertical-align: top;
@@ -103,12 +102,29 @@ a {
     height: 3em;
 }
 
+/*slightly larger query*/
+@media only screen and (min-width: 495px) {
+    .item {
+        height: 175px;
+        font-size: 10px;
+        padding: 1em;
+    }
+
+    .item-header {
+        height: 50px;
+    }
+
+    input,
+    select {
+        width: 125px;
+    }
+}
 
 /*large phone query*/
 @media only screen and (min-width: 530px) {
     .item {
-        font-size: 13px;
         height: 250px;
+        font-size: 13px;
     }
 
     .item-header {
@@ -120,8 +136,8 @@ a {
 @media only screen and (min-width: 690px) {
 
     .item {
-        font-size: 15px;
         height: 250px;
+        font-size: 15px;
     }
 
     .item-header {
@@ -149,8 +165,8 @@ a {
     }
 
     .item {
-        font-size: 17px;
         height: 250px;
+        font-size: 17px;
     }
 
     .item-header {
