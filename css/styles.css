@@ -9,6 +9,8 @@ h1,
 h2 {
     font-weight: 700;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .item-area {
@@ -16,15 +18,16 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 300px;
     width: 100%;
+    height: fit-content;
+    margin: 3px 0 3px 0;
     gap: .5em;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    height: 155px;
+    height: fit-content;
     width: 250px;
     font-size: 9px;
     padding: .5em;
@@ -33,7 +36,7 @@ h2 {
 }
 
 .item-header {
-    height: 40px;
+    height: 75px;
     margin: 0;
     text-align: center;
 }
@@ -122,6 +125,7 @@ a {
 
 /*large phone query*/
 @media only screen and (min-width: 530px) {
+
     .item {
         height: 250px;
         font-size: 13px;
@@ -134,6 +138,10 @@ a {
 
 /*tablet query*/
 @media only screen and (min-width: 690px) {
+
+    .item-area {
+        margin: 6px 0 6px 0;
+    }
 
     .item {
         height: 250px;
@@ -177,6 +185,11 @@ a {
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
+
+    .item-area {
+        margin: 10px 0 10px 0;
+    }
+
     footer {
         font-size: 1em;
     }
