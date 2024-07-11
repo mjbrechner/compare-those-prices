@@ -21,39 +21,64 @@ let pricePerItem3 = 0;
 function cost1Cleaner() {
     document.getElementById("item-1-cost").value = Number(document.getElementById("item-1-cost").value).toFixed(2);
 }
+
 function cost2Cleaner() {
     document.getElementById("item-2-cost").value = Number(document.getElementById("item-2-cost").value).toFixed(2);
 }
+
 function cost3Cleaner() {
     document.getElementById("item-3-cost").value = Number(document.getElementById("item-3-cost").value).toFixed(2);
 }
 
 function calculateComparison() {
-costItem1 = document.getElementById("item-1-cost").value;
-weightItem1 = document.getElementById("item-1-weight").value;
-weightTypeItem1 = document.getElementById("item-1-weight-type").value
-pricePerItem1 = (costItem1/weightItem1).toFixed(2);
+    costItem1 = document.getElementById("item-1-cost").value;
+    weightItem1 = document.getElementById("item-1-weight").value;
+    weightTypeItem1 = document.getElementById("item-1-weight-type").value
 
-costItem2 = document.getElementById("item-2-cost").value;
-weightItem2 = document.getElementById("item-2-weight").value;
-weightTypeItem2 = document.getElementById("item-2-weight-type").value
-pricePerItem2 = (costItem2/weightItem2).toFixed(2);
+    if (weightTypeItem1 === "ounce") {
+        pricePerItem1 = (costItem1 / weightItem1).toFixed(2);
+    } else if (weightTypeItem1 === "pound") {
+        pricePerItem1 = ((costItem1 / weightItem1) / 16).toFixed(2);
+    }
 
-costItem3 = document.getElementById("item-3-cost").value;
-weightItem3 = document.getElementById("item-3-weight").value;
-weightTypeItem3 = document.getElementById("item-3-weight-type").value
-pricePerItem3 = (costItem3/weightItem3).toFixed(2);
 
-// Print out values only if price per item is => 0 without any NaN or Infinity values.
-if ((pricePerItem1 => 0) && !(isNaN(pricePerItem1) || (weightItem1 <= 0))) {
-    document.getElementById("item-1-header").innerText = `Item #1's cost is $${pricePerItem1} per ${weightTypeItem1}.`
-}
+    costItem2 = document.getElementById("item-2-cost").value;
+    weightItem2 = document.getElementById("item-2-weight").value;
+    weightTypeItem2 = document.getElementById("item-2-weight-type").value
+    // pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
+    if (weightTypeItem2 === "ounce") {
+        pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
+    } else if (weightTypeItem2 === "pound") {
+        pricePerItem2 = ((costItem2 / weightItem2) / 16).toFixed(2);
+    }
 
-if ((pricePerItem2 => 0) && !(isNaN(pricePerItem2) || (weightItem2 <= 0))) {
-    document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ${weightTypeItem2}.`
-}
 
-if ((pricePerItem3 => 0) && !(isNaN(pricePerItem3) || (weightItem3 <= 0))) {
-    document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${weightTypeItem3}.`
-}
+
+    costItem3 = document.getElementById("item-3-cost").value;
+    weightItem3 = document.getElementById("item-3-weight").value;
+    weightTypeItem3 = document.getElementById("item-3-weight-type").value
+    // pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
+    // pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
+    if (weightTypeItem3 === "ounce") {
+        pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
+    } else if (weightTypeItem3 === "pound") {
+        pricePerItem3 = ((costItem3 / weightItem3) / 16).toFixed(2);
+    }
+
+
+    // Print out values only if price per item is => 0 without any NaN or Infinity values.
+    if ((pricePerItem1 => 0) && !(isNaN(pricePerItem1) || (weightItem1 <= 0))) {
+        // document.getElementById("item-1-header").innerText = `Item #1's cost is $${pricePerItem1} per ${weightTypeItem1}.`
+        document.getElementById("item-1-header").innerText = `Item #1's cost is $${pricePerItem1} per ounce.`
+    }
+
+    if ((pricePerItem2 => 0) && !(isNaN(pricePerItem2) || (weightItem2 <= 0))) {
+        // document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ${weightTypeItem2}.`
+        document.getElementById("item-2-header").innerText = `Item #2's cost is $${pricePerItem2} per ounce.`
+    }
+
+    if ((pricePerItem3 => 0) && !(isNaN(pricePerItem3) || (weightItem3 <= 0))) {
+        // document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${weightTypeItem3}.`
+        document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ounce.`
+    }
 }
