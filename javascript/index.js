@@ -39,8 +39,9 @@ function calculateComparison() {
         pricePerItem1 = (costItem1 / weightItem1).toFixed(2);
     } else if (weightTypeItem1 === "pound") {
         pricePerItem1 = ((costItem1 / weightItem1) / 16).toFixed(2);
+    } else if (weightTypeItem1 === "gram") {
+        pricePerItem1 = ((costItem1 / weightItem1) * 28.35).toFixed(2);
     }
-
 
     costItem2 = document.getElementById("item-2-cost").value;
     weightItem2 = document.getElementById("item-2-weight").value;
@@ -50,6 +51,8 @@ function calculateComparison() {
         pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
     } else if (weightTypeItem2 === "pound") {
         pricePerItem2 = ((costItem2 / weightItem2) / 16).toFixed(2);
+    } else if (weightTypeItem2 === "gram") {
+        pricePerItem2 = ((costItem2 / weightItem2) * 28.35).toFixed(2);
     }
 
 
@@ -58,11 +61,12 @@ function calculateComparison() {
     weightItem3 = document.getElementById("item-3-weight").value;
     weightTypeItem3 = document.getElementById("item-3-weight-type").value
     // pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
-    // pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
     if (weightTypeItem3 === "ounce") {
         pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
     } else if (weightTypeItem3 === "pound") {
         pricePerItem3 = ((costItem3 / weightItem3) / 16).toFixed(2);
+    } else if (weightTypeItem3 === "gram") {
+        pricePerItem3 = ((costItem3 / weightItem3) * 28.35).toFixed(2);
     }
 
 
