@@ -71,7 +71,7 @@
             </select> -->
             <button id="submit" onclick="calculateComparison()">Submit</button>
             <!-- <h1 id="results">Results are here.</h1> -->
-            <label for="submission-weight-type">Weight Type for Results: </label>
+            <label id="weight-type-label" for="submission-weight-type">Weight Type for Results: </label>
             <select onchange="calculateComparison()" name="submission-weight-type" id="submission-weight-type">
                 <option label="ounces" value="ounce">Ounces</option>
                 <option label="pounds" value="pound">Pounds</option>
@@ -91,7 +91,7 @@
                     document.write(`Copyright © 2024-${thisYear} `);
                 }
             </script>
-            <a class="credits-link" href="https://github.com/mjbrechner">M.J. Brechner</a>
+            <a class="credits-link" href="https://github.com/mjbrechner" target=_blank>M.J. Brechner</a>
         </p>
     </footer>
     <script src="javascript/index.js" defer></script>
