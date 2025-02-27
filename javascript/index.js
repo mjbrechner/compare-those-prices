@@ -50,6 +50,8 @@ function calculateComparison() {
             pricePerItem1 = ((costItem1 / weightItem1) / 16).toFixed(2);
         } else if (weightTypeItem1 === "gram") {
             pricePerItem1 = ((costItem1 / weightItem1) * 28.35).toFixed(2);
+        } else if (weightTypeItem1 === "kilogram") {
+            pricePerItem1 = ((costItem1 / weightItem1) * 35.274).toFixed(2);
         }
     } else if (submissionWeightType === "pound") { // Convert to pounds
         if (weightTypeItem1 === "ounce") {
@@ -58,6 +60,8 @@ function calculateComparison() {
             pricePerItem1 = (costItem1 / weightItem1).toFixed(2);
         } else if (weightTypeItem1 === "gram") {
             pricePerItem1 = ((costItem1 / weightItem1) * 453.6).toFixed(2);
+        } else if (weightTypeItem1 === "kilogram") {
+            pricePerItem1 = ((costItem1 / weightItem1) * 2.205).toFixed(2);
         }
     } else if (submissionWeightType === "gram") { // Convert to grams
         if (weightTypeItem1 === "ounce") {
@@ -65,6 +69,18 @@ function calculateComparison() {
         } else if (weightTypeItem1 === "pound") {
             pricePerItem1 = ((costItem1 / weightItem1) / 453.6).toFixed(2);
         } else if (weightTypeItem1 === "gram") {
+            pricePerItem1 = (costItem1 / weightItem1).toFixed(2);
+        } else if (weightTypeItem1 === "kilogram") {
+            pricePerItem1 = ((costItem1 / weightItem1) * 1000).toFixed(2);
+        }
+    } else if (submissionWeightType === "kilogram") { // Convert to grams
+        if (weightTypeItem1 === "ounce") {
+            pricePerItem1 = ((costItem1 / weightItem1) / 35.274).toFixed(2);
+        } else if (weightTypeItem1 === "pound") {
+            pricePerItem1 = ((costItem1 / weightItem1) / 2.205).toFixed(2);
+        } else if (weightTypeItem1 === "gram") {
+            pricePerItem1 = ((costItem1 / weightItem1) / 1000).toFixed(2);
+        } else if (weightTypeItem1 === "kilogram") {
             pricePerItem1 = (costItem1 / weightItem1).toFixed(2);
         }
     }
@@ -81,6 +97,8 @@ function calculateComparison() {
             pricePerItem2 = ((costItem2 / weightItem2) / 16).toFixed(2);
         } else if (weightTypeItem2 === "gram") {
             pricePerItem2 = ((costItem2 / weightItem2) * 28.35).toFixed(2);
+        } else if (weightTypeItem2 === "kilogram") {
+            pricePerItem2 = ((costItem2 / weightItem2) * 35.274).toFixed(2);
         }
     } else if (submissionWeightType === "pound") { // Convert to pounds
         if (weightTypeItem2 === "ounce") {
@@ -89,6 +107,8 @@ function calculateComparison() {
             pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
         } else if (weightTypeItem2 === "gram") {
             pricePerItem2 = ((costItem2 / weightItem2) * 453.6).toFixed(2);
+        } else if (weightTypeItem2 === "kilogram") {
+            pricePerItem2 = ((costItem2 / weightItem2) * 2.205).toFixed(2);
         }
     } else if (submissionWeightType === "gram") { // Convert to grams
         if (weightTypeItem2 === "ounce") {
@@ -96,6 +116,18 @@ function calculateComparison() {
         } else if (weightTypeItem2 === "pound") {
             pricePerItem2 = ((costItem2 / weightItem2) / 453.6).toFixed(2);
         } else if (weightTypeItem2 === "gram") {
+            pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
+        } else if (weightTypeItem2 === "kilogram") {
+            pricePerItem2 = ((costItem2 / weightItem2) * 1000).toFixed(2);
+        }
+    } else if (submissionWeightType === "kilogram") { // Convert to grams
+        if (weightTypeItem2 === "ounce") {
+            pricePerItem2 = ((costItem2 / weightItem2) / 35.274).toFixed(2);
+        } else if (weightTypeItem2 === "pound") {
+            pricePerItem2 = ((costItem2 / weightItem2) / 2.205).toFixed(2);
+        } else if (weightTypeItem2 === "gram") {
+            pricePerItem2 = ((costItem2 / weightItem2) / 1000).toFixed(2);
+        } else if (weightTypeItem2 === "kilogram") {
             pricePerItem2 = (costItem2 / weightItem2).toFixed(2);
         }
     }
@@ -113,6 +145,8 @@ function calculateComparison() {
             pricePerItem3 = ((costItem3 / weightItem3) / 16).toFixed(2);
         } else if (weightTypeItem3 === "gram") {
             pricePerItem3 = ((costItem3 / weightItem3) * 28.35).toFixed(2);
+        } else if (weightTypeItem3 === "kilogram") {
+            pricePerItem3 = ((costItem3 / weightItem3) * 35.274).toFixed(2);
         }
     } else if (submissionWeightType === "pound") { // Convert to pounds
         if (weightTypeItem3 === "ounce") {
@@ -121,6 +155,8 @@ function calculateComparison() {
             pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
         } else if (weightTypeItem3 === "gram") {
             pricePerItem3 = ((costItem3 / weightItem3) * 453.6).toFixed(2);
+        } else if (weightTypeItem3 === "kilogram") {
+            pricePerItem3 = ((costItem3 / weightItem3) * 2.205).toFixed(2);
         }
     } else if (submissionWeightType === "gram") { // Convert to grams
         if (weightTypeItem3 === "ounce") {
@@ -128,6 +164,18 @@ function calculateComparison() {
         } else if (weightTypeItem3 === "pound") {
             pricePerItem3 = ((costItem3 / weightItem3) / 453.6).toFixed(2);
         } else if (weightTypeItem3 === "gram") {
+            pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
+        } else if (weightTypeItem3 === "kilogram") {
+            pricePerItem3 = ((costItem3 / weightItem3) * 1000).toFixed(2);
+        }
+    } else if (submissionWeightType === "kilogram") { // Convert to grams
+        if (weightTypeItem3 === "ounce") {
+            pricePerItem3 = ((costItem3 / weightItem3) / 35.274).toFixed(2);
+        } else if (weightTypeItem3 === "pound") {
+            pricePerItem3 = ((costItem3 / weightItem3) / 2.205).toFixed(2);
+        } else if (weightTypeItem3 === "gram") {
+            pricePerItem3 = ((costItem3 / weightItem3) / 1000).toFixed(2);
+        } else if (weightTypeItem3 === "kilogram") {
             pricePerItem3 = (costItem3 / weightItem3).toFixed(2);
         }
     }
