@@ -67,7 +67,8 @@ select {
 
 .results-area {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -87,8 +88,15 @@ button:active {
     transform: translate(1px);
 }
 
-#weight-type-label {
+/* #weight-type-label {
     margin: .5em;
+} */
+
+.results-area-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
 }
 
 footer {
@@ -129,6 +137,11 @@ a {
 
 /*large phone query*/
 @media only screen and (min-width: 530px) {
+
+    .results-area {
+        flex-direction: column;
+        gap: 5px;
+    }
 
     .item {
         height: 250px;

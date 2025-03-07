@@ -74,13 +74,16 @@
             </select> -->
             <button id="submit" onclick="calculateComparison()">Submit</button>
             <!-- <h1 id="results">Results are here.</h1> -->
-            <label id="weight-type-label" for="submission-weight-type">Weight Type for Results: </label>
-            <select onchange="calculateComparison()" name="submission-weight-type" id="submission-weight-type">
-                <option label="ounces" value="ounce">Ounces</option>
-                <option label="pounds" value="pound">Pounds</option>
-                <option label="grams" value="gram">Grams</option>
-                <option label="kilograms" value="kilogram">Kilograms</option>
-            </select>
+            <div class="results-area-inner">
+                <label id="weight-type-label" for="submission-weight-type">Weight to View: </label>
+                <select onchange="calculateComparison()" name="submission-weight-type" id="submission-weight-type">
+                    <option label="ounces" value="ounce">Ounces</option>
+                    <option label="pounds" value="pound">Pounds</option>
+                    <option label="grams" value="gram">Grams</option>
+                    <option label="kilograms" value="kilogram">Kilograms</option>
+                </select>
+            </div>
+
         </div>
 
     </main>
