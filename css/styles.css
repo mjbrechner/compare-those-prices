@@ -67,9 +67,10 @@ select {
 
 .results-area {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin: 10px 15px 0x 15px;
 }
 
 button {
@@ -87,10 +88,6 @@ button {
 button:active {
     transform: translate(1px);
 }
-
-/* #weight-type-label {
-    margin: .5em;
-} */
 
 .results-area-inner {
     display: flex;
@@ -150,6 +147,10 @@ a {
 
     .item-header {
         height: 90px;
+    }
+
+    button {
+        margin-bottom: 5px;
     }
 }
 
