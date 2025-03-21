@@ -70,7 +70,7 @@ select {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 15px 0x 15px;
+    margin: 0 15px 0 15px;
 }
 
 button {
@@ -187,7 +187,7 @@ a {
 @media only screen and (min-width: 900px) {
 
     .item-area {
-        margin-bottom: 15px;
+        margin: 10px 0 10px 0;;
     }
 
     .item {
@@ -205,7 +205,7 @@ a {
 @media only screen and (min-width: 992px) {
 
     .item-area {
-        margin: 10px 0 10px 0;
+        margin: 15px 0 15px 0;
     }
 
     footer {
