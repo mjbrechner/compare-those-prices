@@ -137,7 +137,7 @@ a {
 
     .results-area {
         flex-direction: column;
-        gap: 5px;
+        /* gap: 5px; */
     }
 
     .item {
@@ -168,6 +168,10 @@ a {
 
     .item-header {
         height: 110px;
+    }
+
+    button {
+        margin-bottom: 10px;
     }
 
     footer {
