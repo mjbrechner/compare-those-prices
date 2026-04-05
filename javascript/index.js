@@ -197,3 +197,17 @@ function calculateComparison() {
         document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${submissionWeightType}.`
     }
 }
+
+function clearFields() {
+    document.getElementById("item-1-cost").value = "";
+    document.getElementById("item-1-weight").value = "";
+    document.getElementById("item-1-weight-type").selectedIndex = 0;
+
+    document.getElementById("item-2-cost").value = "";
+    document.getElementById("item-2-weight").value = "";
+    document.getElementById("item-2-weight-type").selectedIndex = 0;
+
+    document.getElementById("item-3-cost").value = "";
+    document.getElementById("item-3-weight").value = "";
+    document.getElementById("item-3-weight-type").selectedIndex = 0;
+}

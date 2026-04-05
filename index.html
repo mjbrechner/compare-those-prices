@@ -68,7 +68,10 @@
         </div>
 
         <div class="results-area">
-            <button id="submit" onclick="calculateComparison()">Submit</button>
+            <div class="buttons">
+                <button id="submit" onclick="calculateComparison()">Submit</button>
+                <button id="clear" onclick="clearFields()">Clear</button>
+            </div>
             <div class="results-area-inner">
                 <label id="weight-type-label" for="submission-weight-type">Weight to View: </label>
                 <select onchange="calculateComparison()" name="submission-weight-type" id="submission-weight-type">
