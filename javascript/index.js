@@ -19,6 +19,13 @@ let pricePerItem3 = 0;
 
 let submissionWeightType = "ounce";
 
+function normalizeOpacity() {
+    document.getElementById("item-1").style.opacity = 1;
+    document.getElementById("item-2").style.opacity = 1;
+    document.getElementById("item-3").style.opacity = 1;
+}
+
+
 // Round the price values to two decimal places.
 function cost1Cleaner() {
     document.getElementById("item-1-cost").value = Number(document.getElementById("item-1-cost").value).toFixed(2);
@@ -196,21 +203,33 @@ function calculateComparison() {
         // document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${weightTypeItem3}.`
         document.getElementById("item-3-header").innerText = `Item #3's cost is $${pricePerItem3} per ${submissionWeightType}.`
     }
+
+    // Visual cue for button press
+    document.getElementById("item-1").style.opacity = .5;
+    document.getElementById("item-2").style.opacity = .5;
+    document.getElementById("item-3").style.opacity = .5;
+    setTimeout(normalizeOpacity, 125);
 }
 
 function clearFields() {
-    document.getElementById("item-1-cost").value = "";
-    document.getElementById("item-1-weight").value = "";
+    document.getElementById("item-1-cost").value = "0";
+    document.getElementById("item-1-weight").value = "0";
     document.getElementById("item-1-weight-type").selectedIndex = 0;
     document.getElementById("item-1-header").innerText = "Item #1";
 
-    document.getElementById("item-2-cost").value = "";
-    document.getElementById("item-2-weight").value = "";
+    document.getElementById("item-2-cost").value = "0";
+    document.getElementById("item-2-weight").value = "0";
     document.getElementById("item-2-weight-type").selectedIndex = 0;
     document.getElementById("item-2-header").innerText = "Item #2";
 
-    document.getElementById("item-3-cost").value = "";
-    document.getElementById("item-3-weight").value = "";
+    document.getElementById("item-3-cost").value = "0";
+    document.getElementById("item-3-weight").value = "0";
     document.getElementById("item-3-weight-type").selectedIndex = 0;
     document.getElementById("item-3-header").innerText = "Item #3";
+
+    // Visual cue for button press
+    document.getElementById("item-1").style.opacity = .5;
+    document.getElementById("item-2").style.opacity = .5;
+    document.getElementById("item-3").style.opacity = .5;
+    setTimeout(normalizeOpacity, 125);
 }
