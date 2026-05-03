@@ -80,6 +80,13 @@ select {
     margin: 0 15px 0 15px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 50px;
+}
+
 button {
     background-color: #44667c;
     color: #fdf9f1;
@@ -139,6 +146,12 @@ a {
     select {
         width: 125px;
     }
+
+    .buttons {
+        flex-direction: row;
+        /* gap: 5px; */
+    }
+
 }
 
 /*large phone query*/
